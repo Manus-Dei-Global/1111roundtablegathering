@@ -1,0 +1,85 @@
+[
+  {
+    "name": "Send an inquiry through WhatsApp",
+    "sanity": true,
+    "viewport": "desktop",
+    "covers": [
+      "registration form validation",
+      "consent before data collection",
+      "WhatsApp inquiry handoff",
+      "on-page success state",
+      "frontend-only form validation",
+      "WhatsApp inquiry handoff",
+      "additional contact number options"
+    ],
+    "description": "Verifies the frontend validates a visitor inquiry and opens WhatsApp with the entered details.",
+    "steps": [
+      "Open the registration form",
+      "Enter a valid name, email, phone, ministry, and message",
+      "Agree to the data-use notice and submit",
+      "Confirm the page reports success and WhatsApp opens with the entered details"
+    ],
+    "expected": "A success message appears, WhatsApp opens with the inquiry details, and the three contact numbers are available in the contact area."
+  },
+  {
+    "name": "Use the mobile menu and event calendar",
+    "viewport": "mobile",
+    "covers": [
+      "responsive mobile navigation",
+      "navigation menu open and close",
+      "download calendar event"
+    ],
+    "description": "Verifies the mobile menu navigates and closes and the event calendar action is available.",
+    "steps": [
+      "Open the menu",
+      "Choose FAQ and confirm the menu closes at the FAQ section",
+      "Return to the event section and select Add to Calendar"
+    ],
+    "expected": "Navigation reaches the chosen section, the menu closes, and an 11/11 Roundtable calendar file downloads."
+  },
+  {
+    "name": "Reject invalid inquiry and expand FAQ",
+    "viewport": "desktop",
+    "covers": [
+      "required field validation",
+      "email and phone validation",
+      "FAQ accordion interaction"
+    ],
+    "description": "Verifies invalid form details show helpful errors and FAQ answers expand accessibly.",
+    "steps": [
+      "Submit the empty form",
+      "Enter invalid email and phone values and submit again",
+      "Open the first FAQ question"
+    ],
+    "expected": "Required-field and invalid-contact errors appear, then the selected FAQ answer expands."
+  },
+  {
+    "name": "Explore the event media showcase",
+    "viewport": "desktop",
+    "covers": [
+      "automatic looping slideshow playback",
+      "year and event captions",
+      "slideshow navigation without visible photo numbers",
+      "enlarged single-photo lightbox navigation",
+      "multi-photo uploads grouped into year albums",
+      "six-slide portrait flyer carousel",
+      "flyer autoplay fade, pause, swipe, arrows, dots, and slide counter",
+      "flyer full-screen lightbox navigation",
+      "sequential two-video playback using ended events",
+      "shared muted state and Tap to unmute control",
+      "video play/pause, progress, volume, and tab controls",
+      "pause video when outside viewport and resume when visible",
+      "placeholder fallbacks for media not yet uploaded",
+      "responsive side-by-side desktop and stacked mobile media layout"
+    ],
+    "description": "Verifies the added flyer and video showcase provides accessible slideshow and player controls, graceful media placeholders, and responsive layout.",
+    "steps": [
+      "Open the Media Showcase section and advance between flyers with arrow, dot, and keyboard controls",
+      "Confirm the counter and active gold dot update, then open and close the flyer lightbox",
+      "Select a video tab, unmute, and use the play, progress, volume, and pause controls",
+      "Allow a video to end and confirm the other starts, then scroll the player out of view and back",
+      "Check the showcase stacks on a mobile viewport without horizontal scrolling"
+    ],
+    "expected": "The six-slide carousel advances and can be paused and navigated accessibly; the lightbox opens; the two videos retain the shared mute state and switch sequentially; missing media shows a clear fallback; and the showcase stacks on mobile."
+  }
+]
